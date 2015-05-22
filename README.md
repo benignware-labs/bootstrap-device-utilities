@@ -4,7 +4,7 @@
 This bootstrap css-extension let's you control visibility of elements based on device screen dimensions by adding `visible-device-*` and `hidden-device-*` helpers.
 
 Displaying content dependent on device resolution is especially useful for optimizing large background-images.
-While image elements cannot be prevented from loading once they're added to the document, css-background-images wrapped in an hidden element will [not load in most commonly used browsers](http://timkadlec.com/2012/04/media-query-asset-downloading-results/) until they're visible.
+While image elements cannot be prevented from loading once they're added to the document, css-background-images wrapped in an hidden element will [not load in most commonly used browsers](http://timkadlec.com/2012/04/media-query-asset-downloading-results/).
 Being fully aware of the client's resolution and also because of being pure css, which offers the best possible performance, this technique is preferred over server-side- or javascript-solutions.
 
 In contrast to viewport, device dimensions are fixed at the maximum resolution.
