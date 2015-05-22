@@ -3,7 +3,7 @@
 
 This bootstrap css-extension let's you control visibility of elements based on device screen dimensions.
 
-This is especially useful, when optimizing large background-images for different devices. 
+This is especially useful when optimizing large background-images for different devices. 
 While image-elements cannot be prevented from loading once they're added to the document, css-background-images wrapped in an hidden element will not load in most commonly used browsers until they're visible.
 Being fully aware of the client's resolution and also because of being pure css, which offers the best possible performance, this technique is preferred over server-side- or javascript-solutions.
 
