@@ -7,10 +7,11 @@ Displaying content dependent on device resolution is especially useful for optim
 While image elements cannot be prevented from loading once they're added to the document, css-background-images wrapped in an hidden element will [not load in most commonly used browsers](http://timkadlec.com/2012/04/media-query-asset-downloading-results/).
 Being fully aware of the client's resolution and also because of being pure css, which offers the best possible performance, this technique is preferred over server-side- or javascript-solutions.
 
-In contrast to viewport, device dimensions are fixed at the maximum resolution.
-For example, with standard bootstrap breakpoints applied at `768px`, `992px` and `1200px`, an ipad of `768x1024` will be `sm` in portrait-, but `md` in landscape-orientation.
 Making use of standard viewport-based helpers would force different images to be loaded on window-resize which is not suitable for the purpose of optimization.
-In order to match the overall maximum resolution, bootstrap-device-utilities also take device-height into account. This way, images can be easily delivered at individual sizes. 
+For example, with standard bootstrap breakpoints applied at `768px`, `992px` and `1200px`, an ipad of `768x1024` will be `sm` in portrait-, but `md` in landscape-orientation.
+
+In contrast to viewport, device dimensions are fixed at the maximum resolution.
+In order to always match the entire screen, bootstrap-device-utilities also take device-height into account. This way, images can be easily delivered at individual sizes. 
 
 The package contains a less and a sass-version as well as a compiled css-distribution.
 
