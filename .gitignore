@@ -37,3 +37,6 @@ node_modules
 
 # Bower components
 vendor
+
+# Mac OS
+*/.DS_Store
