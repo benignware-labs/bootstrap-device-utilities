@@ -11,7 +11,7 @@ Making use of standard viewport-based helpers would force different images to be
 For example, with standard bootstrap breakpoints applied at `768px`, `992px` and `1200px`, an ipad of `768x1024` will be `sm` in portrait-, but `md` in landscape-orientation.
 
 In contrast to viewport, device dimensions are fixed at the maximum resolution.
-In order to always match the entire screen, bootstrap-device-utilities also take device-height into account. This way, images can be easily delivered at individual sizes. 
+In order to always match the entire screen, bootstrap-device-utilities also take device-height into account. This way, images can be easily delivered at individual, screen-fitting sizes. 
 
 The package contains a less and a sass-version as well as a compiled css-distribution.
 
