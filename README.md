@@ -9,7 +9,7 @@ Being fully aware of the client's resolution and also because of being pure css,
 
 In contrast to viewport, device dimensions are fixed at the maximum resolution.
 For example, with standard bootstrap breakpoints applied at `768px`, `992px` and `1200px`, an ipad of `768x1024` will be `sm` in portrait-, but `md` in landscape-orientation.
-Making use of standard viewport-based helpers would force different images to be loaded on window which is not suitable for the purpose of optimization.
+Making use of standard viewport-based helpers would force different images to be loaded on window-resize which is not suitable for the purpose of optimization.
 In order to match the overall maximum resolution, bootstrap-device-utilities also take device-height into account. This way, images can be easily delivered at individual sizes. 
 
 The package contains a less and a sass-version as well as a compiled css-distribution.
