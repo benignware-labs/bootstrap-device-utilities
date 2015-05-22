@@ -34,3 +34,6 @@ node_modules
 
 # GFM Preview
 .README.md.html
+
+# Bower components
+vendor
