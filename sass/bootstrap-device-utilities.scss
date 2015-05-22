@@ -1,0 +1,118 @@
+//
+// Responsive: Utility classes
+// --------------------------------------------------
+
+// Visibility utilities
+// Note: Deprecated .visible-device-xs, .visible-device-sm, .visible-device-md, and .visible-device-lg as of v3.2.0
+
+@include responsive-invisibility('.visible-device-xs');
+@include responsive-invisibility('.visible-device-sm');
+@include responsive-invisibility('.visible-device-md');
+@include responsive-invisibility('.visible-device-lg');
+
+.visible-device-xs-block,
+.visible-device-xs-inline,
+.visible-device-xs-inline-block,
+.visible-device-sm-block,
+.visible-device-sm-inline,
+.visible-device-sm-inline-block,
+.visible-device-md-block,
+.visible-device-md-inline,
+.visible-device-md-inline-block,
+.visible-device-lg-block,
+.visible-device-lg-inline,
+.visible-device-lg-inline-block {
+  display: none !important;
+}
+
+@media (max-width: $screen-xs-max) and (max-device-height: $screen-xs-max) {
+  @include responsive-visibility('.visible-device-xs');
+}
+.visible-device-xs-block {
+  @media (max-width: $screen-xs-max) and (max-device-height: $screen-xs-max) {
+    display: block !important;
+  }
+}
+.visible-device-xs-inline {
+  @media (max-width: $screen-xs-max) and (max-device-height: $screen-xs-max) {
+    display: inline !important;
+  }
+}
+.visible-device-xs-inline-block {
+  @media (max-width: $screen-xs-max) and (max-device-height: $screen-xs-max) {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (max-device-height: $screen-sm-max), (min-device-height: $screen-sm-min) and (max-device-height: $screen-sm-max) {
+  @include responsive-visibility('.visible-device-sm');
+}
+.visible-device-sm-block {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (max-device-height: $screen-sm-max), (min-device-height: $screen-sm-min) and (max-device-height: $screen-sm-max) {
+    display: block !important;
+  }
+}
+.visible-device-sm-inline {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (max-device-height: $screen-sm-max), (min-device-height: $screen-sm-min) and (max-device-height: $screen-sm-max) {
+    display: inline !important;
+  }
+}
+.visible-device-sm-inline-block {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (max-device-height: $screen-sm-max), (min-device-height: $screen-sm-min) and (max-device-height: $screen-sm-max) {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) and (max-device-width: $screen-md-max), (min-device-height: $screen-md-min) and (max-device-height: $screen-md-max) {
+  @include responsive-visibility('.visible-device-md');
+}
+.visible-device-md-block {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) and (max-device-width: $screen-md-max), (min-device-height: $screen-md-min) and (max-device-height: $screen-md-max) {
+    display: block !important;
+  }
+}
+.visible-device-md-inline {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) and (max-device-width: $screen-md-max), (min-device-height: $screen-md-min) and (max-device-height: $screen-md-max) {
+    display: inline !important;
+  }
+}
+.visible-device-md-inline-block {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) and (max-device-width: $screen-md-max), (min-device-height: $screen-md-min) and (max-device-height: $screen-md-max) {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  @include responsive-visibility('.visible-device-lg');
+}
+.visible-device-lg-block {
+  @media (min-width: $screen-lg-min) {
+    display: block !important;
+  }
+}
+.visible-device-lg-inline {
+  @media (min-width: $screen-lg-min) {
+    display: inline !important;
+  }
+}
+.visible-device-lg-inline-block {
+  @media (min-width: $screen-lg-min) {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: $screen-xs-max) and (max-device-height: $screen-xs-max) {
+  @include responsive-invisibility('.hidden-device-xs');
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (max-device-height: $screen-sm-max), (min-device-height: $screen-sm-min) and (max-device-height: $screen-sm-max) {
+  @include responsive-invisibility('.hidden-device-sm');
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) and (max-device-width: $screen-md-max), (min-device-height: $screen-md-min) and (max-device-height: $screen-md-max) {
+  @include responsive-invisibility('.hidden-device-md');
+}
+
+@media (min-width: $screen-lg-min) {
+  @include responsive-invisibility('.hidden-device-lg');
+}

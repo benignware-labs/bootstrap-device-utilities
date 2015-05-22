@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-device-utilities",
+  "version": "0.0.1",
+  "authors": [
+    "Rafael Nowrotek <mail@benignware.com>"
+  ],
+  "description": "Bootstrap Responsive Utilities based on device resolution",
+  "main": "dist/css/bootstrap-device-utilities",
+  "keywords": [
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor/components",
+    "test",
+    "tests",
+    "samples"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.4",
+    "bootstrap-sass-official": "~3.3.4"
+  }
+}

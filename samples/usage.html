@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>bootstrap-device-utilities</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/bootstrap-device-utilities.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <style>
+    
+      body, html {
+        width: 100%;
+        height: 100%;
+      }
+    
+      .navbar-default,
+      .jumbotron {
+        background: rgba(230,230,230,0.8);
+      }
+      
+      .background-layer > div {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      
+    </style>
+    
+    <script>
+      $(function() {
+        
+        function updateResolution() {
+          $('#screen-size').html(screen.width + "x" + screen.height);
+          $('#window-size').html($(window).innerWidth() + "x" + $(window).innerHeight());
+        }
+        
+        $(window).on('resize', updateResolution);
+        
+        updateResolution();
+      });
+      
+    </script>
+  </head>
+  <body>
+    
+    <div class="container">
+      
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">bootstrap-device-utilities</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Example</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+      
+      <div class="page-header">
+        <h1>Usage</h1>
+      </div>
+      
+      <p><b>Screen:</b> <code id="screen-size"></code></p>
+      
+      <p>
+        The following example displays text based on device resolution:
+      </p>
+      
+      <pre>&lt;div class=&quot;visible-device-lg&quot;&gt;Large screen&lt;/div&gt;
+&lt;div class=&quot;visible-device-md&quot;&gt;Medium screen&lt;/div&gt;
+&lt;div class=&quot;visible-device-sm&quot;&gt;Small screen&lt;/div&gt;
+&lt;div class=&quot;visible-device-xs&quot;&gt;Extra small screen&lt;/div&gt;</pre>
+      
+      <blockquote>
+        <div class="visible-device-lg">Large screen</div>
+        <div class="visible-device-md">Medium screen</div>
+        <div class="visible-device-sm">Small screen</div>
+        <div class="visible-device-xs">Extra small screen</div>
+      </blockquote>
+      
+      <p>
+        The following example hides text based on device resolution:
+      </p>
+      
+      <pre>&lt;div class=&quot;hidden-device-lg&quot;&gt;Not a large screen&lt;/div&gt;
+&lt;div class=&quot;hidden-device-md&quot;&gt;Not a medium screen&lt;/div&gt;
+&lt;div class=&quot;hidden-device-sm&quot;&gt;Not a small screen&lt;/div&gt;
+&lt;div class=&quot;hidden-device-xs&quot;&gt;Not an extra small screen&lt;/div&gt;</pre>
+      
+      <blockquote>
+        <div class="hidden-device-lg">Not a large screen</div>
+        <div class="hidden-device-md">Not a medium screen</div>
+        <div class="hidden-device-sm">Not a small screen</div>
+        <div class="hidden-device-xs">Not an extra small screen</div>
+      </blockquote>
+      
+      <hr/>
+      
+      <p><b>Window:</b> <code id="window-size"></code></p>
+      
+      <p>
+        The following example displays text based on window resolution:
+      </p>
+      
+      <pre>&lt;div class=&quot;visible-device-lg&quot;&gt;Large window&lt;/div&gt;
+&lt;div class=&quot;visible-device-md&quot;&gt;Medium window&lt;/div&gt;
+&lt;div class=&quot;visible-device-sm&quot;&gt;Small window&lt;/div&gt;
+&lt;div class=&quot;visible-device-xs&quot;&gt;Extra small window&lt;/div&gt;</pre>
+      
+      <blockquote>
+        <div class="visible-lg">Large window</div>
+        <div class="visible-md">Medium window</div>
+        <div class="visible-sm">Small window</div>
+        <div class="visible-xs">Extra small window</div>
+      </blockquote>
+      
+      <p>
+        The following example hides text based on window resolution:
+      </p>
+      
+      <pre>&lt;div class=&quot;hidden-device-lg&quot;&gt;Not a large window&lt;/div&gt;
+&lt;div class=&quot;hidden-device-md&quot;&gt;Not a medium window&lt;/div&gt;
+&lt;div class=&quot;hidden-device-sm&quot;&gt;Not a small window&lt;/div&gt;
+&lt;div class=&quot;hidden-device-xs&quot;&gt;Not an extra small window&lt;/div&gt;</pre>
+      
+      <blockquote>
+        <div class="hidden-lg">Not a large window</div>
+        <div class="hidden-md">Not a medium window</div>
+        <div class="hidden-sm">Not a small window</div>
+        <div class="hidden-xs">Not an extra small window</div>
+      </blockquote>
+      
+        
+        
+    </div>
+    
+  </body>
+</html>
