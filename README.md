@@ -1,7 +1,7 @@
 # bootstrap-device-utilities
 > Bootstrap Responsive Utilities based on device resolution
 
-This bootstrap css-extension let's you control visibility of elements based on device screen dimensions by adding `visible-device-*` and `hidden-device-*` helpers.
+This bootstrap css-extension lets you control visibility of elements based on device screen dimensions by adding `visible-device-*` and `hidden-device-*` helpers.
 
 Displaying content dependent on device resolution is especially useful for optimizing large background-images.
 While image elements cannot be prevented from loading once they're added to the document, css-background-images wrapped in an hidden element will [not load in most commonly used browsers](http://timkadlec.com/2012/04/media-query-asset-downloading-results/).
